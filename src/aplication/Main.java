@@ -1,5 +1,9 @@
+package aplication;
+
 import bordGame.Posicao;
 import bordGame.Tabuleiro;
+import xadrez.PartidaXadrez;
+import aplication. *;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,6 +11,7 @@ public class Main {
         Posicao position = new Posicao(3, 5);
         Tabuleiro tabuleiro = new Tabuleiro(8,8);
 
-        System.out.println(tabuleiro);
+        PartidaXadrez partida = new PartidaXadrez();
+        UI.printTabuleiro(partida.getPecaXadrez());
     }
 }
